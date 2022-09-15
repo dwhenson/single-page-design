@@ -1,0 +1,20 @@
+.has-sidebar {
+  --bespoke-gap: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--bespoke-gap, var(--space-s, 1rem));
+
+  // Sidebar
+  > :first-child {
+    flex-basis: var(--side-size, max(22rem, 50%));
+    flex-grow: 1;
+  }
+
+  // Main content
+  > :last-child {
+    flex-basis: 0;
+    flex-grow: 999;
+    min-inline-size: var(--main-size, 50%);
+  }
+}

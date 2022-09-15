@@ -1,0 +1,8 @@
+.overlay {
+  display: grid;
+  align-items: end;
+
+  > * {
+    grid-area: 1 / 1/ -1/ -1;
+  }
+}

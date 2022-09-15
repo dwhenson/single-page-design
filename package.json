@@ -1,0 +1,32 @@
+{
+  "author": "Dave Henson",
+  "description": "FEM Challenge - Sunnyside Agency",
+  "version": "1.0.0",
+  "keywords": [],
+  "name": "sunnyside-agency",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "eslint": "8.23.1",
+    "eslint-config-healthier": "3.2.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-html": "7.1.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-unicorn": "43.0.2",
+    "healthier": "6.0.2",
+    "parcel": "2.7.0",
+    "prettier": "2.7",
+    "sass": "1.54.9",
+    "stylelint": "^14.11.0",
+    "stylelint-config-prettier": "9.0.3",
+    "stylelint-config-recommended-scss": "^7.0.0",
+    "stylelint-order": "5.0.0",
+    "stylelint-scss": "4.3.0",
+    "stylelint-use-logical-spec": "^4.1.0"
+  }
+}

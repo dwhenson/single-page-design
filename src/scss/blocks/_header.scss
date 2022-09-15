@@ -1,0 +1,13 @@
+.header {
+  position: relative;
+  padding-block-end: max(var(--vh, 48vh), var(--rem, 24rem));
+  background-image: url("../images/desktop/image-header.jpg");
+  background-position: center bottom;
+  background-size: cover;
+
+  .arrow {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+  }
+}

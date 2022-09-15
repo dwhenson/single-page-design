@@ -1,0 +1,21 @@
+.has-sidebar-reverse {
+  --bespoke-gap: 0;
+
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  gap: var(--bespoke-gap, var(--space-s, 1rem));
+
+  // Main content
+  > :first-child {
+    flex-basis: 0;
+    flex-grow: 999;
+    min-inline-size: var(--main-size, 50%);
+  }
+
+  // Sidebar
+  > :last-child {
+    flex-basis: var(--side-size, max(22rem, 50%));
+    flex-grow: 1;
+  }
+}

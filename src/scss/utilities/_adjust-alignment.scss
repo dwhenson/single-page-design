@@ -1,0 +1,11 @@
+@use "../abstracts/breakpoints" as *;
+
+.adjust-alignment {
+  align-items: center;
+  text-align: center;
+
+  @include respond-to("medium") {
+    align-items: start;
+    text-align: start;
+  }
+}

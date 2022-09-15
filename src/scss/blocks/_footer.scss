@@ -1,0 +1,35 @@
+.footer {
+  --flow-space: var(--space-xl);
+
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(167.46, 43.791%, 70%);
+
+  .logo {
+    align-self: center;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    gap: var(--space-m);
+  }
+
+  nav ul {
+    gap: var(--space-xl);
+  }
+
+  a,
+  a[aria-label] {
+    display: block;
+    transition: color 250ms, fill 250ms;
+    color: var(--clr-primary-500);
+    fill: var(--clr-primary-500);
+
+    &:hover,
+    &:focus {
+      color: var(--clr-neutral-100);
+      fill: var(--clr-neutral-100);
+    }
+  }
+}

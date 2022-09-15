@@ -1,0 +1,27 @@
+.learn-link {
+  position: relative;
+  max-inline-size: fit-content;
+  font-family: var(--ff-headings);
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--clr-neutral-500);
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -10;
+    display: block;
+    inset-inline-start: 50%;
+    inline-size: 104%;
+    block-size: 0.8em;
+    border-radius: 9999px;
+    background-color: hsla(var(--hue, 167, 40%, 24%), 0.2);
+    transform: translate(-50%, -95%);
+    transition: background-color 250ms;
+  }
+
+  &:hover::after {
+    background-color: hsla(var(--hue, 167, 40%, 24%), 0.7);
+  }
+}

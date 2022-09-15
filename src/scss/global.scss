@@ -1,0 +1,85 @@
+@use "reset";
+@use "abstracts/variables";
+@use "abstracts/breakpoints" as *;
+
+/* ==================================================
+Composition
+================================================== */
+
+@use "composition/align-content";
+@use "composition/box";
+@use "composition/flow-content";
+@use "composition/reverse-sidebar";
+@use "composition/sidebar";
+@use "composition/switcher";
+
+/* ==================================================
+Utilities
+================================================== */
+
+@use "utilities/adjust-alignment";
+@use "utilities/dark-text";
+@use "utilities/overlay";
+@use "utilities/padding-block";
+@use "utilities/visually-hidden";
+
+/* ==================================================
+Blocks
+================================================== */
+
+@use "blocks/burger-menu";
+@use "blocks/footer";
+@use "blocks/gallery";
+@use "blocks/header";
+@use "blocks/learn-link";
+@use "blocks/site-head";
+@use "blocks/testomonials";
+
+body {
+  background-color: var(--clr-neutral-100);
+  font-family: var(--ff-body);
+  font-size: var(--step--1);
+  font-weight: 400;
+  text-align: center;
+  color: var(--clr-neutral-400);
+}
+
+:is(h1, h2, h3) {
+  font-family: var(--ff-headings);
+  font-weight: 900;
+  color: var(--clr-neutral-500);
+}
+
+h1 {
+  margin-block-start: 1.5em;
+  font-size: var(--step-4);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--clr-neutral-100);
+}
+
+h2 {
+  font-size: var(--step-3);
+}
+
+h3 {
+  font-size: var(--step-1);
+}
+
+p {
+  max-inline-size: min(100%, 40ch);
+}
+
+:focus-visible {
+  opacity: 1 !important;
+  outline: 4px solid var(--clr-neutral-500);
+  outline-offset: 4px;
+}
+
+a {
+  text-decoration: none;
+}
+
+:focus:not(:focus-visible) {
+  outline: transparent;
+}

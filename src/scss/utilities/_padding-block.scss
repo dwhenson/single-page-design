@@ -1,0 +1,4 @@
+.padding-block {
+  padding-block-start: max(var(--vh, 8vh), var(--rem, 4rem));
+  padding-block-end: max(var(--vh, 8vh), var(--rem, 4rem));
+}

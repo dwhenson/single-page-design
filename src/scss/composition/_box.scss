@@ -1,0 +1,4 @@
+.box {
+  padding-block: var(--padding-block, var(--space-l, 1rem));
+  padding-inline: var(--padding-inline, var(--space-m, 1rem));
+}
